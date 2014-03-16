@@ -4,6 +4,7 @@ author:
   - 'Nathan Gray, <kolibrie@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.59
+  IO::File: 0
   Test::More: 0.88
 configure_requires:
   ExtUtils::MakeMaker: 6.59
@@ -20,8 +21,10 @@ no_index:
     - inc
     - t
 requires:
+  HTTP::Headers: 0
+  URI: 0
   perl: 5.10.0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/kolibrie/apr-emulate-psgi.git
-version: 0.02
+version: 0.03
